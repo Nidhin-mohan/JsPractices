@@ -78,3 +78,68 @@ There are following types of operators in JavaScript.
 
 
 ### Special Operators
+
+
+
+# conditional Statements
+
+## if...else statements
+
+syntax
+
+```
+if (condition) {
+  /* code to run if condition is true */
+} else {
+  /* run some other code instead */
+}
+
+
+```
+
+
+Also can use ``` else``` if to check more conditions
+
+## Logical operators: AND, OR and NOT
+
+
+- && — AND; allows you to chain together two or more expressions so that all of them have to individually evaluate to true for the whole expression to return true.
+- || — OR; allows you to chain together two or more expressions so that one or more of them have to individually evaluate to true for the whole expression to return true.
+
+
+## switch statements
+
+```
+switch (expression) {
+  case choice1:
+    run this code
+    break;
+
+  case choice2:
+    run this code instead
+    break;
+
+  // include as many cases as you like
+
+  default:
+    actually, just run this code
+}
+```
+
+## ternary operators
+
+synatax
+
+
+```condition ? exprIfTrue : exprIfFalse```
+
+
+## Coercion in JavaScript 
+
+1. String to Number Conversion: When any string or non-string value is added to a string, it always converts the non-string value to a string implicitly. When the string ‘Rahul’ is added to the number 10 then JavaScript does not give an error. It converts the number 10 to string ’10’ using coercion and then concatenates both the strings. Some more examples are shown below.
+
+ ## FALSY VALUE AND TRUTHY VALUES
+
+ In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN.
+
+ 
