@@ -493,3 +493,161 @@ console.log("flatMap", a);
 //flatMap  [10, 20, 30, 40, 50]
 ```
 
+# objects in javascript
+
+
+The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object()
+
+```
+var user = {
+    firstName : "Nidhin",
+    lastName : "Moahn",
+    role: "Admin",
+    loginCount : 32,
+    facebookSignedIn: true
+}
+
+// accessing the value
+
+console.log(user.firstName);
+console.log(user["lastName"]);
+
+console.log(user.loginCount);
+
+// changing the value
+
+user.loginCount = 5;
+console.log(user.loginCount);
+
+console.table(user);
+
+//output
+Nidhin
+Moahn
+32
+5
+┌──────────────────┬──────────┐
+│     (index)      │  Values  │
+├──────────────────┼──────────┤
+│    firstName     │ 'Nidhin' │
+│     lastName     │ 'Moahn'  │
+│       role       │ 'Admin'  │
+│    loginCount    │    5     │
+│ facebookSignedIn │   true   │
+└──────────────────┴──────────┘
+```
+
+# methods
+
+Method definition is a shorter syntax for defining a function property in an object initializer.
+
+
+```
+
+var user = {
+  firstName: "Nidhin",
+  lastName: "Moahn",
+  role: "Admin",
+  //method 
+  buyCourse: function (couseName) {
+
+    this.courseList.push(couseName);
+
+    // this is key word which reffered to user like this.something = this.use
+
+  },
+  }
+```
+
+
+# loops
+
+- for
+ 
+ A for loop repeats until a specified condition evaluates to false. 
+
+ syntax
+ ```
+ for ([initialExpression]; [conditionExpression]; [incrementExpression])
+  statement
+
+ ```
+
+ example
+ ```
+ for(let i = 0;i<10; i++){
+    console.log(i)
+
+}
+```
+
+- while
+
+A while statement executes its statements as long as a specified condition evaluates to true
+
+
+syntax
+```
+while (condition)
+  statement
+```
+
+example
+```
+let i = 0;
+ while(i < myStates.length){
+   
+     console.log(myStates[i]);
+      i++;
+ }
+```
+
+- do.. do while
+
+The do...while statement repeats until a specified condition evaluates to false.
+
+syntax
+```
+do
+  statement
+while (condition);
+```
+
+example
+
+```
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+```
+
+## for each loop
+
+The forEach() method executes a provided function once for each array element.
+
+# for.. of loop
+
+To walk over all keys of an object, there exists a special form of the loop: for..in. This is a completely different thing from the for(;;) construct that we studied before. this is mainly used to find object key
+
+```
+for (key in object) {
+  // executes the body for each key among object properties
+}
+```
+
+# for... of loop
+
+The JavaScript for of statement loops through the values of an iterable object.
+
+It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+
+```
+for (const n of names){
+    console.log(n);
+}
+```
+
+
+

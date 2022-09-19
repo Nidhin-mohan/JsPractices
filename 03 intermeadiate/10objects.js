@@ -18,6 +18,4 @@ console.log(user.loginCount);
 user.loginCount = 5;
 console.log(user.loginCount);
 
-
-
 console.table(user);

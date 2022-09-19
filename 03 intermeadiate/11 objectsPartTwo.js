@@ -7,6 +7,8 @@ var user = {
   loginCount: 32,
   facebookSignedIn: true,
   courseList: [],
+
+  //method 
   buyCourse: function (couseName) {
 
     this.courseList.push(couseName);
