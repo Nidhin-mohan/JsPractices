@@ -3,12 +3,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 button {
   padding: 25px;
   font-size: 16px;
   border-radius: 50px;
-  background-color: #077b8a ;
-  border: none;
+  background-color:transparent ;
+  border: solid 1px;
+  color: antiquewhite;
 }
