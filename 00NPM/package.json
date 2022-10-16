@@ -1,0 +1,17 @@
+{
+  "name": "00npm",
+  "version": "1.0.0",
+  "description": "an app to learn npm",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Nidhin",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
